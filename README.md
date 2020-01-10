@@ -11,10 +11,10 @@
 ### ROW REVERSE
     - É a mesma coisa que a row, a diferença é que esta propriedade organiza suas divs de trás pra frente.
 
-###COLUMN
+### COLUMN
   - Alinha o layout em coluna, ou seja, os items ficarão organizados encaixados em varias linhas com uma ou mais colunas.
 
-###COLUMN REVERSE
+### COLUMN REVERSE
       - É a mesma coisa que a COLUMN, a diferença é que esta propriedade organiza suas divs de trás pra frente.
 
 ## FLEX-WRAP
@@ -31,7 +31,7 @@
 ### WRAP-REVERSE
     Os items flex irão se encaixar em multiplas linhas porem de baixo para cima.
 
-##FLEX-FLOW
+## FLEX-FLOW
     É uma propriedade que engloba o flex-wrap e o flex-direction em uma propriedade só
 
     flex-flow: FLEX-WRAP || FLEX-DIRECTION;
