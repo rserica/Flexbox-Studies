@@ -1,0 +1,77 @@
+
+/* Reseting HTML  */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container  {
+  background: turquoise;
+  display: flex;
+  width: 100%;
+  height: 1000px;
+
+  /* Flex-direction tem quatro propridades
+  flex-direction: row | column | row-reverse | column-reverse */
+
+  flex-direction:row;
+
+  /* Flex-wrap tem tres propridades
+  flex-direction: nowrap | wrap | wrap-reverse */
+  flex-wrap: wrap;
+
+  /* justify-content: flex-start | flex-end | space-between | space-around | space evenly | center */
+  justify-content: space-around;
+  /*align-content: flex-start | flex-end | space-between | space-around | space evenly | center | stretch | baseline*/
+  align-items:flex-start;
+
+}
+
+.item {
+background: lightsalmon;
+flex: 0 1 auto;
+/* flex-grow: 0;
+flex-shrink:1;
+/* Para usar o flex-grow ou o flex-shrink, deve-se ter uma flex-basis */
+/* flex-basis:100px; */
+margin:5px
+
+}
+
+/* Pegar o elemento-filho como referencia
+    ---- A referencia passada nesse exemplo é 1, ou seja ele vai pegar o primeiro elemento filho do nosso content*/
+.item:nth-child(1){
+  order: 1;
+  background: lightgreen;
+}
+
+.item:nth-child(2){
+  order: 2;
+  /* flex-grow:1; */
+  background: lightblue;
+}
+
+.item:nth-child(3){
+  order: 3;
+  background: pink;
+}
+
+.item:nth-child(4){
+  background: lavender;
+
+}
+
+/*  Propriedade Flex
+  -flex-grow
+  ---Esta propriedade está relacionada a ocupação do resto da largura da div
+  -flex-shrink
+  ---Esta propriedade encolhe a div
+  -flex-basis
+  ---define uma width de cada elemento
+
+  a propriedade flex condensa o flex-shrink, flex-grow
+
+  flexbox: grow || shrink ||
+  */
+  ---
